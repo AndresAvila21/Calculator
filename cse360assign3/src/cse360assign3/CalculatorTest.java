@@ -8,10 +8,9 @@ public class CalculatorTest {
 
 	@Test
 	public void testCalculator() {
-		Calculator calc = new Calculator();
-		assertNotNull(calc);
+		fail("Not yet implemented");
 	}
-
+/*
 	@Test
 	public void testGetTotal() {
 		fail("Not yet implemented");
@@ -31,15 +30,16 @@ public class CalculatorTest {
 	public void testMultiply() {
 		fail("Not yet implemented");
 	}
-
+*/
 	@Test
 	public void testDivide() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		//assertEquals(0, calc.divide(0));
 	}
-
+/*
 	@Test
 	public void testGetHistory() {
 		fail("Not yet implemented");
 	}
-
+*/
 }
