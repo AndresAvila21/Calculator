@@ -9,6 +9,7 @@ package cse360assign3;
 public class Calculator {
 
 	private int total;
+	public String input = new String();
 	
 	/**Calculator Constructor */
 	public Calculator () {
@@ -23,16 +24,19 @@ public class Calculator {
 	/**adds the value */
 	public void add (int value) {
 		total += value;
+		input = input + " + " + value;
 	}
 	
 	/**subtracts the value */
 	public void subtract (int value) {
-		total -= value;
+		total = total - value;
+		input = input + " - " + value;
 	}
 	
 	/**multiplies the value */
 	public void multiply (int value) {
-		total *= value;
+		total = total * value;
+		input = input + " * " + value;
 	}
 	
 	/**divides the value */
@@ -40,11 +44,13 @@ public class Calculator {
 		if(value == 0)
 			total = 0;
 		else
-		total = total/value;
+		total = total / value;
+		
+		input = input + " / " + value;
 	}
 	
 	/**returns previous actions */
 	public String getHistory () {
-		return "";
+		return "0" + input;
 	}
 }
